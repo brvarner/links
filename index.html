@@ -1,2 +1,137 @@
-<h1>My link in bio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  <title>My Link In Bio</title>
+  
+  <style>
 
+    @font-face {
+      font-family: coolvetica;
+      src: url('coolvetica-rg.otf');
+    }
+
+    body {
+      display: flex;
+      padding: 40px 0px;
+      background-color: #0f0e17;
+      justify-content: center;
+      align-items: center;
+      font-family: coolvetica, sans-serif;
+    }
+
+    .name {
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+      font-family: coolvetica, sans-serif;
+      font-size: 8vh;
+    }
+
+    .banner{
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a{
+      color: #a7a9be;
+      text-decoration: none;
+      font-size: 5vh;
+    }
+
+    .link{
+      background-color: #ff8906;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border-radius: 30px;
+    }
+
+    .link a{
+      color: #fffffe;
+      text-decoration: none;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .banner-image {
+      width: 210px;
+      height: 210px;
+      object-fit: none;
+      object-position: 21% 42%;
+      border-radius: 200px;
+      padding: 5%;
+    }
+
+    .thumbnail{
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="items">
+  <div class="banner">
+    <img src="images/profilePic.jpg" alt="Brandon Varner on a couch" class="banner-image">
+  </div>
+
+  <div class="name">
+    Brandon Varner
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/brvarner" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/brandonvarneral/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://bvarner.dev" target="_blank">
+      <i class="fa-solid fa-globe"></i>
+    </a>
+  </div>
+
+  <div class="link">
+    <img
+      src="images/color.jpg" class="thumbnail" alt="a colorful gradient">
+
+    <a target="_blank" href="https://bootcamp.uxdesign.cc/why-you-should-ditch-hex-and-use-hsl-to-make-picking-colors-easy-c376f69ae34e">Make picking colors simple: ditch HEX and use HSL - Warren Wu</a>
+  </div>
+
+  <div class="link">
+    <img src="images/cascadiaEarthquake.jpg" class="thumbnail" alt="a person walking through earthquake ravaged land">
+
+    <a target="_blank"
+      href="https://www.newyorker.com/magazine/2015/07/20/the-really-big-one">The Really Big One - Kathryn Schulz</a>
+  </div>
+
+  <div class="link">
+    <img
+      src="images/quik.webp" class="thumbnail" alt="a youtube thumbnail for a video on the Qwik framework">
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=x2eF3YLiNhY"> VIDEO: Qwik… the world's first O(1) JavaScript framework? - Fireship</a>
+  </div>
+</div>
+</body>
+</html>
